@@ -25,15 +25,14 @@ public class Main {
 		//manager.addProduct(p5);
 		//manager.displayAllProduct();
 		//System.out.println(manager.getProducts());
-		
+
 		System.out.println("-------------");
 		manager.removeProduct(1);
 		manager.printProduct();
-		
-		
+
 		System.out.println("-------------");
 		Product p = manager.getProductByName("米");
 		System.out.println(p);
 	}
-	
+
 }
