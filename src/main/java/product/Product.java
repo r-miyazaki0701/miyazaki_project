@@ -1,6 +1,8 @@
 package product;
 
-public class Product {
+import java.util.List;
+
+public class Product implements Searchable {
 	private int id;
 	private String name;
 	private int price;
@@ -48,5 +50,10 @@ public class Product {
 	@Override
 	public String toString() {
 		return "Product: id=" + id + ", name=" + name + ", price=" + price + ", stock= " + stock;
+	}
+
+	@Override
+	public List<Product> search(String keyword) {
+		return null;
 	}
 }
