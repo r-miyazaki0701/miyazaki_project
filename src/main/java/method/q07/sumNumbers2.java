@@ -16,7 +16,7 @@ public class sumNumbers2 {
 		int number4 = num1 + roundnum2;
 		//System.out.println(floornum2);
 		return number4;
-		
+
 	}
 
 }
