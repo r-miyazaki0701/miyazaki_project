@@ -12,6 +12,7 @@ public class PracticeDB {
 		String url = "jdbc:mysql://localhost:3306/product_management";
 		String user = "root";
 		String password = "rentaro0701";
+		System.out.println("データベース接続成功");
 		System.out.println("productsテーブルの全ての商品情報を表示");
 
 		try (Connection connection = DriverManager.getConnection(url, user, password);
