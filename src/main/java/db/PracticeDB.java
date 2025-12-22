@@ -11,13 +11,13 @@ public class PracticeDB {
 
 		String url = "jdbc:mysql://localhost:3306/product_management";
 		String user = "root";
-		String password = "rentaro0701";
-		System.out.println("データベース接続成功");
-		System.out.println("productsテーブルの全ての商品情報を表示");
+		String password = "rentaro0702";
 
 		try (Connection connection = DriverManager.getConnection(url, user, password);
 				Statement statement = connection.createStatement();
 				ResultSet resultSet = statement.executeQuery("SELECT * FROM products")) {
+			System.out.println("データベース接続成功");
+			System.out.println("productsテーブルの全ての商品情報を表示");
 			while (resultSet.next()) {
 
 				System.out.println("id: " + resultSet.getInt("id"));
