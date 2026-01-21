@@ -103,7 +103,7 @@ public class PracticeDB {
 		try (Connection connection = DriverManager.getConnection(url, user, password)) {
 			connection.setAutoCommit(false);
 			try {
-				System.out.println("--商品の更新➀--");
+				System.out.println("--商品の価格と在庫の更新➀--");
 				System.out.print("商品IDを入力してください: ");
 				int id1 = scanner.nextInt();
 				System.out.print("価格を入力してください: ");
@@ -126,7 +126,7 @@ public class PracticeDB {
 					//1の方でエラーが出るとその段階でスローされてロールバックされる
 
 				}
-				System.out.println("--商品の更新②--");
+				System.out.println("--商品の価格と在庫の更新②--");
 				System.out.print("商品IDを入力してください: ");
 				int id2 = scanner.nextInt();
 				System.out.print("価格を入力してください: ");
